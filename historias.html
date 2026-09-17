@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historias | FANAOCAVI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">FANAOCAVI</a></div>
+        <ul class="nav-links">
+            <li><a href="sobre-mi.html">SOBRE MÍ</a></li>
+            <li><a href="historias.html" style="color: var(--rosa-acento);">HISTORIAS</a></li>
+            <li><a href="fotografias.html">FOTOGRAFÍAS</a></li>
+            <li><a href="videos.html">VIDEOS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+    <main class="stories-section">
+        <header class="stories-header">
+            <p class="intro-tag">Narrativas periodísticas</p>
+            <h1>Historias que merecen ser contadas.</h1>
+        </header>
+
+        <div class="stories-grid">
+            
+            <article class="story-item">
+                <div class="grid-item">
+                    <div class="image-wrapper">
+                        <div class="overlay"></div>
+                        <img src="img/milagros_colores.jpg" alt="Vidas en Juego">
+                    </div>
+                </div>
+                <div class="story-info">
+                    <span class="category">Investigación</span>
+                    <h2>Vidas en juego: El impacto de las apuestas en adolescentes</h2>
+                    <p>Un análisis profundo sobre las consecuencias de la ludopatía digital en jóvenes.</p>
+                    <a href="javascript:void(0)" class="read-more" onclick="openStory('historia1')">LEER HISTORIA —</a>
+                </div>
+            </article>
+
+            <article class="story-item">
+                <div class="grid-item">
+                    <div class="image-wrapper">
+                        <div class="overlay"></div>
+                        <img src="img/rutasdeayuda.png" alt="Migración">
+                    </div>
+                </div>
+                <div class="story-info">
+                    <span class="category">Crónica Humana</span>
+                    <h2>Volver a empezar: El camino de un emprendedor migrante</h2>
+                    <p>La historia de Ronald y los desafíos de la independencia laboral en Perú.</p>
+                    <a href="javascript:void(0)" class="read-more" onclick="openStory('historia2')">LEER HISTORIA —</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <div id="storyModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content slider-mode">
+            <div id="modalBody" class="slider-container"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-line"></div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>© 2026 — Lima, Perú</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
